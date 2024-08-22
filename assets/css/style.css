@@ -11,7 +11,7 @@
 
         /* タイトルのスタイル */
         .title {
-            font-size: 50px;
+            font-size: 45px;
             font-weight: bold;
         }
 
@@ -36,3 +36,55 @@
         nav ul li a:hover {
             text-decoration: underline;
         }
+
+        /* ボディ全体の背景画像 */
+body {
+    background-image: url('../img/headbody.jpg'); /* ボディの背景画像を指定 */
+    height: 10vh;
+    background-size: cover; /* 背景画像を全面に表示 */
+    
+    margin: 0;
+    padding: 0;
+}
+/* ヘッダーのスタイル */
+header {
+    background-image: url('../img/headbody.jpg'); /* ヘッダーの背景画像を指定 */
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px; /* ヘッダーの高さを指定 */
+    color: black;
+    text-align: center;
+    padding-top: 0px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#Unlimited{
+    font-size: 70px; /* フォントサイズを大きく設定 */
+    font-weight: bold;
+    text-align: center; /* テキストを中央に配置 */
+    margin: 0px 0; /* 上下に余白を追加 */
+    margin-bottom: 5px; /* 各セクションの下に20pxのスペースを追加 */
+
+}
+
+#learning{
+    font-size: 70px; /* フォントサイズを大きく設定 */
+    text-align: center; /* テキストを中央に配置 */
+    margin: 0px 0; /* 上下に余白を追加 */
+    margin-bottom: 500px; /* 各セクションの下に20pxのスペースを追加 */
+}
+
+#philosophy{
+    font-size: 30px; /* フォントサイズを大きく設定 */
+    text-align: left; /* テキストを中央に配置 */
+    margin: 0px 0; /* 上下に余白を追加 */
+    padding-left: 50px; /* 左側に30pxの内側余白を追加 */
+}
+
+#imhere{
+    font-size: 80px; /* フォントサイズを大きく設定 */
+    text-align: left; /* テキストを中央に配置 */
+    margin: 0px 0; /* 上下に余白を追加 */
+    padding-left: 50px; /* 左側に30pxの内側余白を追加 */
+}
