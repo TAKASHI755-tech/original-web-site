@@ -92,6 +92,14 @@ header {
     padding-left: 50px; /* 左側に30pxの内側余白を追加 */
 }
 
+#philosophySection {
+    display: flex; /* 要素を横並びにする */
+    background-color: whitesmoke; /* 背景色を設定（任意） */
+    padding: 5px; /* セクション全体に余白を追加 */
+}
+
+.fa-4x {color:black}
+
 #imhere{
     font-size: 80px; /* フォントサイズを大きく設定 */
     text-align: left; /* テキストを中央に配置 */
@@ -101,11 +109,23 @@ header {
 
 #movies{
     font-size: 55px; /* フォントサイズを大きく設定 */
-    background-color: whitesmoke;
+    color: white;
+    background-color: red;
     text-align: right; /* テキストを中央に配置 */
+    margin: 0; /* 上下に余白を追加しない */
     margin: 0px 0; /* 上下に余白を追加 */
+    padding-top: 10px; /* 上側に内側余白を追加 */
+    padding-bottom: 10px; /* 下側に内側余白を追加 */
     padding-right: 50px; /* 左側に30pxの内側余白を追加 */
 }
+
+#moviesSection {
+    display: flex; /* 要素を横並びにする */
+    background-color: red; /* 背景色を設定（任意） */
+    padding: 5px; /* セクション全体に余白を追加 */
+}
+
+.fa-5x {color:white}
 
 footer{
     text-align: center;
