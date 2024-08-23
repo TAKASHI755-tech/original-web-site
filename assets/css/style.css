@@ -77,6 +77,7 @@ header {
 
 #philosophy{
     font-size: 30px; /* フォントサイズを大きく設定 */
+    background-color: whitesmoke;
     text-align: left; /* テキストを中央に配置 */
     margin: 0px 0; /* 上下に余白を追加 */
     padding-left: 50px; /* 左側に30pxの内側余白を追加 */
@@ -84,7 +85,24 @@ header {
 
 #imhere{
     font-size: 80px; /* フォントサイズを大きく設定 */
+    background-color: whitesmoke;
     text-align: left; /* テキストを中央に配置 */
     margin: 0px 0; /* 上下に余白を追加 */
     padding-left: 50px; /* 左側に30pxの内側余白を追加 */
+}
+
+#movies{
+    font-size: 50px; /* フォントサイズを大きく設定 */
+    text-align: right; /* テキストを中央に配置 */
+    margin: 0px 0; /* 上下に余白を追加 */
+    padding-right: 50px; /* 左側に30pxの内側余白を追加 */
+}
+
+footer{
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 20px 0;
+    margin-top: 120px;
+    font-size: 40px;
 }
