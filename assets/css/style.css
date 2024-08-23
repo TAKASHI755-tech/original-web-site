@@ -14,6 +14,11 @@
             font-size: 45px;
             font-weight: bold;
         }
+        @media screen and (max-width:780px){
+            .title {
+                font-size: 28px;
+            }
+        }
 
         /* リンクリストのスタイル */
         nav ul {
@@ -46,7 +51,7 @@ body {
     margin: 0;
     padding: 0;
 }
-/* ヘッダーのスタイル */
+        /* ヘッダーのスタイル */
 header {
     background-image: url('../img/headbody.jpg'); /* ヘッダーの背景画像を指定 */
     background-size: cover;
@@ -65,7 +70,11 @@ header {
     text-align: center; /* テキストを中央に配置 */
     margin: 0px 0; /* 上下に余白を追加 */
     margin-bottom: 5px; /* 各セクションの下に20pxのスペースを追加 */
-
+}
+@media screen and (max-width:780px){
+    #Unlimited {
+        font-size: 28px;
+    }
 }
 
 #learning{
@@ -76,7 +85,7 @@ header {
 }
 
 #philosophy{
-    font-size: 30px; /* フォントサイズを大きく設定 */
+    font-size: 55px; /* フォントサイズを大きく設定 */
     background-color: whitesmoke;
     text-align: left; /* テキストを中央に配置 */
     margin: 0px 0; /* 上下に余白を追加 */
@@ -85,14 +94,14 @@ header {
 
 #imhere{
     font-size: 80px; /* フォントサイズを大きく設定 */
-    background-color: whitesmoke;
     text-align: left; /* テキストを中央に配置 */
     margin: 0px 0; /* 上下に余白を追加 */
     padding-left: 50px; /* 左側に30pxの内側余白を追加 */
 }
 
 #movies{
-    font-size: 50px; /* フォントサイズを大きく設定 */
+    font-size: 55px; /* フォントサイズを大きく設定 */
+    background-color: whitesmoke;
     text-align: right; /* テキストを中央に配置 */
     margin: 0px 0; /* 上下に余白を追加 */
     padding-right: 50px; /* 左側に30pxの内側余白を追加 */
@@ -104,5 +113,5 @@ footer{
     color: white;
     padding: 20px 0;
     margin-top: 120px;
-    font-size: 40px;
+    font-size: 45px;
 }

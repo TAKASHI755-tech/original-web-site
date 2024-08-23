@@ -6,6 +6,29 @@
     <title>Logical Expression I</title>
     <link rel="stylesheet" href="./assets/css/style.css">
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <style>
+        /* ナビゲーションリストのスタイル */
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 20px;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            color: #000;
+            text-decoration: none;
+            padding: 10px;
+            transition: color 0.3s ease; /* なめらかに色を変える */
+        }
+        /* マウスオーバー時に赤くする */
+        nav ul li a:hover {
+            color: red;
+        }
+    </style>
 </head>
 
 <body>
@@ -18,7 +41,7 @@
                 <li><a href="#">About</a></li>
                 <li><a href="#">Information</a></li>
                 <li><a href="#">Document</a></li>
-                <li><a href="#">Movies</a></li>
+                <li><a href="#movies">Movies</a></li>
                 <li><a href="#">We Blog</a></li>
             </ul>
         </nav>
@@ -49,8 +72,6 @@
         <iframe width="560" height="315" src="https://www.youtube.com/embed/UscLxuLMJ6g?si=ZUUIulJZV5H6V6Xk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         <i class="fab fa-youtube fa-5x"></i>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/tuGKI5RTuI8?si=hmQ6OgdbRw2po6Pr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </main>
-
     <footer>
         <small>Copyright &copy; UAL .inc</small>
 
