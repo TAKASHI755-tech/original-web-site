@@ -81,14 +81,50 @@ header {
     font-size: 25px; /* フォントサイズを大きく設定 */
     text-align: center; /* テキストを中央に配置 */
     margin: 0px 0; /* 上下に余白を追加 */
-    margin-bottom: 5px; /* 各セクションの下に20pxのスペースを追加 */
+    margin-bottom: 220px; /* 各セクションの下に20pxのスペースを追加 */
 }
 
 #learning{
     font-size: 70px; /* フォントサイズを大きく設定 */
     text-align: center; /* テキストを中央に配置 */
     margin: 0px 0; /* 上下に余白を追加 */
-    margin-bottom: 500px; /* 各セクションの下に20pxのスペースを追加 */
+}
+
+#yourworld{
+    font-size: 25px; /* フォントサイズを大きく設定 */
+    font-weight: bold;
+    text-align: center; /* テキストを中央に配置 */
+    margin: 0px 0; /* 上下に余白を追加 */
+    margin-bottom: 600px; /* 各セクションの下に20pxのスペースを追加 */
+}
+
+.speech-bubble {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: center;
+    background-color: whitesmoke;
+    color: blue;
+    padding: 15px;
+    border-radius: 10px;
+    width: 950px;
+    margin: 20px;
+    font-size: 25px;
+}
+
+.speech-bubble2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: center;
+    background-color: whitesmoke;
+    color: red;
+    padding: 15px;
+    border-radius: 10px;
+    width: 950px;
+    margin: 20px;
+    font-size: 25px;
+}
+
+.flip-icon {
+    transform: scaleX(-1); /* アイコンを左右反転させる */
+    display: inline-block; /* アイコンの反転が正しく適用されるようにする */
 }
 
 #philosophy{
@@ -108,16 +144,42 @@ header {
 .fa-4x {color:black}
 
 #imhere{
+    font-family: fantasy;
     font-size: 80px; /* フォントサイズを大きく設定 */
+    color: navy;
+    
     text-align: center; /* テキストを中央に配置 */
-    margin: 0px 0; /* 上下に余白を追加 */
+    margin: 21px 0; /* 上下に余白を追加 */
     padding-left: 50px; /* 左側に30pxの内側余白を追加 */
 }
 
-section img {
-    width: 150px; /* 幅を指定 */
-    height: auto; /* アスペクト比を保ったまま高さを自動調整 */
-    margin: 5px; /* 画像同士の間に余白を追加 */
+ul {
+    list-style-type: none; /* ・を消す */
+    padding-left: 0; /* 左側の余白を削除（必要に応じて） */
+    margin: 0; /* マージンを調整（必要に応じて） */
+}
+
+.slider img {
+    width:100%;/*スライダー内の画像を横幅100%に*/
+    height:10px;
+}
+
+/*slickのJSで書かれるタグ内、スライド左右の余白調整*/
+
+.slider .slick-slide {
+    margin:0 10px;/*スライド左右の余白調整*/
+}
+
+#white{
+    color: white;
+    font-size: 500;
+    margin: 200px 200;
+}
+
+img {
+    width: 170px; /* 幅を100pxに設定 */
+    height: auto; /* 高さは自動調整 */
+    margin: 10px; /* 画像同士の間に余白を追加 */
 }
 
 #movies{
@@ -139,6 +201,22 @@ section img {
     padding: 5px; /* セクション全体に余白を追加 */
 }
 
+#maps{
+    font-size: 55px; /* フォントサイズを大きく設定 */
+    color: white;
+    text-align: right; /* テキストを中央に配置 */
+    margin: 0; /* 上下に余白を追加しない */
+    margin: 0px 0; /* 上下に余白を追加 */
+    padding-top: 10px; /* 上側に内側余白を追加 */
+    padding-bottom: 10px; /* 下側に内側余白を追加 */
+    padding-left: 10px; /* 左側に30pxの内側余白を追加 */
+}
+#mapSection {
+    display: flex; /* 要素を横並びにする */
+    text-align: right; /* テキストを中央に配置 */
+    background-color: lightblue; /* 背景色を設定（任意） */
+    padding: 5px; /* セクション全体に余白を追加 */
+}
 .fa-6x {color:white}
 
 footer{
