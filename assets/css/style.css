@@ -11,12 +11,12 @@
 
         /* タイトルのスタイル */
         .title {
-            font-size: 45px;
+            font-size: 50px;
             font-weight: bold;
         }
         @media screen and (max-width:780px){
             .title {
-                font-size: 28px;
+                font-size: 30px;
             }
         }
 
@@ -43,14 +43,38 @@
         }
 
         /* ボディ全体の背景画像 */
-body {
-    background-image: url('../img/headbody.jpg'); /* ボディの背景画像を指定 */
-    height: 10vh;
-    background-size: cover; /* 背景画像を全面に表示 */
-    
-    margin: 0;
-    padding: 0;
-}
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            z-index: 1000;
+        }
+        
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+        
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        
+        /* コンテンツがヘッダーの下に隠れないようにするための余白を追加 */
+        body {
+            padding-top: 100px;
+        }
+
         /* ヘッダーのスタイル */
 header {
     background-image: url('../img/headbody.jpg'); /* ヘッダーの背景画像を指定 */
@@ -60,15 +84,24 @@ header {
     color: black;
     text-align: center;
     padding-top: 0px;
-    font-size: 24px;
+    font-size: 35px;
     font-weight: bold;
+}
+
+body {
+    background-image: url('../img/headbody.jpg'); /* ボディの背景画像を指定 */
+    height: 10vh;
+    background-size: cover; /* 背景画像を全面に表示 */
+    
+    margin: 0;
+    padding: 0;
 }
 
 #Unlimited{
     font-size: 70px; /* フォントサイズを大きく設定 */
     font-weight: bold;
     text-align: center; /* テキストを中央に配置 */
-    margin: 0px 0; /* 上下に余白を追加 */
+    margin: 350px 0; /* 上下に余白を追加 */
     margin-bottom: 5px; /* 各セクションの下に20pxのスペースを追加 */
 }
 @media screen and (max-width:780px){
@@ -98,36 +131,13 @@ header {
     margin-bottom: 600px; /* 各セクションの下に20pxのスペースを追加 */
 }
 
-.speech-bubble {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    position: center;
-    background-color: whitesmoke;
-    color: blue;
-    padding: 15px;
-    border-radius: 10px;
-    width: 950px;
-    margin: 20px;
-    font-size: 25px;
-}
-
-.speech-bubble2 {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    position: center;
-    background-color: whitesmoke;
-    color: red;
-    padding: 15px;
-    border-radius: 10px;
-    width: 950px;
-    margin: 20px;
-    font-size: 25px;
-}
-
 .flip-icon {
     transform: scaleX(-1); /* アイコンを左右反転させる */
     display: inline-block; /* アイコンの反転が正しく適用されるようにする */
 }
 
 #philosophy{
+    scroll-margin-top: 210px;
     font-size: 55px; /* フォントサイズを大きく設定 */
     background-color: whitesmoke;
     text-align: left; /* テキストを中央に配置 */
@@ -153,36 +163,31 @@ header {
     padding-left: 50px; /* 左側に30pxの内側余白を追加 */
 }
 
-ul {
+ul{
     list-style-type: none; /* ・を消す */
     padding-left: 0; /* 左側の余白を削除（必要に応じて） */
     margin: 0; /* マージンを調整（必要に応じて） */
 }
 
-.slider img {
-    width:100%;/*スライダー内の画像を横幅100%に*/
-    height:10px;
-}
-
-/*slickのJSで書かれるタグ内、スライド左右の余白調整*/
-
-.slider .slick-slide {
-    margin:0 10px;/*スライド左右の余白調整*/
-}
-
-#white{
+#information{
+    scroll-margin-top: 200px;
+    font-size: 55px; /* フォントサイズを大きく設定 */
     color: white;
-    font-size: 500;
-    margin: 200px 200;
+    background-color:yellowgreen;
+    text-align: right; /* テキストを中央に配置 */
+    margin: 0; /* 上下に余白を追加しない */
+    margin: 0px 0; /* 上下に余白を追加 */
+    padding-top: 10px; /* 上側に内側余白を追加 */
+    padding-bottom: 10px; /* 下側に内側余白を追加 */
+    padding-left: 10px; /* 左側に30pxの内側余白を追加 */
 }
 
-img {
-    width: 170px; /* 幅を100pxに設定 */
-    height: auto; /* 高さは自動調整 */
-    margin: 10px; /* 画像同士の間に余白を追加 */
+#informationcontent{
+    font-size: 50px;
 }
 
 #movies{
+    scroll-margin-top: 200px;
     font-size: 55px; /* フォントサイズを大きく設定 */
     color: white;
     background-color: red;
@@ -194,6 +199,28 @@ img {
     padding-left: 10px; /* 左側に30pxの内側余白を追加 */
 }
 
+#more{
+    font-size: 50px; /* フォントサイズを大きく設定 */
+    color: white;
+    background-color: red;
+    text-align: right; /* テキストを中央に配置 */
+    margin: 0; /* 上下に余白を追加しない */
+    margin: 0px 0; /* 上下に余白を追加 */
+    padding-top: 10px; /* 上側に内側余白を追加 */
+    padding-bottom: 10px; /* 下側に内側余白を追加 */
+    padding-left: 10px; /* 左側に30pxの内側余白を追加 */
+}
+
+#more a {
+    text-decoration: none; /* 下線を消す */
+    color: inherit; /* 親要素の色を引き継ぐ */
+    font-weight: bold; /* 太字にする */
+}
+
+#more a:hover {
+    color: black; /* マウスオーバー時に色を変える */
+}
+
 #moviesSection {
     display: flex; /* 要素を横並びにする */
     text-align: right; /* テキストを中央に配置 */
@@ -201,7 +228,15 @@ img {
     padding: 5px; /* セクション全体に余白を追加 */
 }
 
+#informationSection {
+    display: flex; /* 要素を横並びにする */
+    text-align: right; /* テキストを中央に配置 */
+    background-color: yellowgreen; /* 背景色を設定（任意） */
+    padding: 5px; /* セクション全体に余白を追加 */
+}
+
 #maps{
+    scroll-margin-top: 210px;
     font-size: 55px; /* フォントサイズを大きく設定 */
     color: white;
     text-align: right; /* テキストを中央に配置 */
@@ -217,7 +252,81 @@ img {
     background-color: lightblue; /* 背景色を設定（任意） */
     padding: 5px; /* セクション全体に余白を追加 */
 }
+
+    #document {
+        display: flex;
+        background-color: rgba(128, 128, 128, 0.5); /* 半透明のグレイを指定 (rgba で透明度を調整) */
+        flex-direction: column;
+        align-items: center; /* 横方向に中央揃え */
+        justify-content: center; /* 縦方向に中央揃え */
+        text-align: center; /* 各div内のテキストを中央揃え */
+        height: 100%; /* オプション: セクション全体の高さを確保して中央揃えを強調 */
+    }
+    
+    .policy {
+        margin: 30px 0; /* オプション: 各divの間に余白を追加 */
+    }
+
+#downloadButton{
+    width: 1000px;
+    height: 120px;
+    border: solid gray 1px;
+    font: caption;
+    font-size: 50px;
+    padding-bottom: 20px;
+    background-image: url('../img/スクリーンショット\ 2024-08-28\ 11.37.48.png'); /* Replace with the path to your image */
+    background-size: 1000px 700px; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+
+#downloadButton1{
+    width: 1000px;
+    height: 120px;
+    border: solid gray 1px;
+    font: caption;
+    font-size: 50px;
+    padding-bottom: 20px;
+    background-image: url('../img/スクリーンショット\ 2024-08-28\ 11.37.48.png'); /* Replace with the path to your image */
+    background-size: 1000px 700px; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+
+#downloadButton2{
+    width: 1000px;
+    height: 120px;
+    border: solid gray 1px;
+    font: caption;
+    font-size: 50px;
+    padding-bottom: 20px;
+    background-image: url('../img/スクリーンショット\ 2024-08-28\ 11.37.48.png'); /* Replace with the path to your image */
+    background-size: 1000px 700px; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+
+#lesson {
+    font-size: 40px;
+
+}
 .fa-6x {color:white}
+
+/*==================================================
+スライダーのためのcss
+===================================*/
+.slider iframe {
+    width:100%;/*スライダー内の画像を横幅100%に*/
+    height:auto;
+    padding: 20px;
+}
+
+/*slickのJSで書かれるタグ内、スライド左右の余白調整*/
+
+.slider .slick-slide {
+    margin:0 10px;/*スライド左右の余白調整*/
+}
+
 
 footer{
     text-align: center;
